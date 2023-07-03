@@ -1,0 +1,40 @@
+{
+  "githubRepo": "AGEOfJoy-Database",
+  "githubToken": "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",
+  "githubUserName": "curif",
+  "gardenBaseUrl": "",
+  "prHistory": [
+    "https://github.com/curif/AGEOfJoy-Database/pull/4"
+  ],
+  "baseTheme": "dark",
+  "theme": "{\"name\":\"80s Neon\",\"author\":\"deathau\",\"repo\":\"deathau/80s-Neon-for-Obsidian.md\",\"screenshot\":\"screenshot.jpg\",\"modes\":[\"dark\",\"light\"],\"cssUrl\":\"https://raw.githubusercontent.com/deathau/80s-Neon-for-Obsidian.md/HEAD/theme.css\"}",
+  "faviconPath": "",
+  "noteSettingsIsInitialized": true,
+  "siteName": "AGE of Joy Cabinet Database",
+  "slugifyEnabled": true,
+  "noteIconKey": "dg-note-icon",
+  "defaultNoteIcon": "",
+  "showNoteIconOnTitle": false,
+  "showNoteIconInFileTree": false,
+  "showNoteIconOnInternalLink": false,
+  "showNoteIconOnBackLink": false,
+  "showCreatedTimestamp": false,
+  "createdTimestampKey": "dg-created",
+  "showUpdatedTimestamp": false,
+  "updatedTimestampKey": "dg-updated",
+  "timestampFormat": "MMM dd, yyyy h:mm a",
+  "styleSettingsCss": "",
+  "pathRewriteRules": "",
+  "defaultNoteSettings": {
+    "dgHomeLink": true,
+    "dgPassFrontmatter": false,
+    "dgShowBacklinks": false,
+    "dgShowLocalGraph": false,
+    "dgShowInlineTitle": false,
+    "dgShowFileTree": true,
+    "dgEnableSearch": false,
+    "dgShowToc": false,
+    "dgLinkPreview": false,
+    "dgShowTags": true
+  }
+}
