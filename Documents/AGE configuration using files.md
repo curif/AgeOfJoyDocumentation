@@ -60,6 +60,10 @@ audio:
   in-game-background:
     volume-percent: 20
     muted: false
+locomotion:
+  teleport-enabled: true
+  speed: 2
+  turn-speed: 80
 ```
 
 ## `npc`
@@ -76,6 +80,14 @@ It's the background sound, you can change the volume or mute it.
 * `mute`: true/false. You can mute the background audio using this key.
 ### `in-game-background` 
 It's the background sound when you play a game. The keys and values are the same. Maybe you want to mute the background sound when you are playing, or decrement to a 20% (like the example)
+
+## Locomotion
+
+Refers to the player's movement in the virtual space (walk, rotate, etc.)
+
+* `teleport-enabled`: `true` or `false`. Activate/deactivate the [[In room Teleportation beam]] 
+* `speed`: is the translation velocity. The velocity used to walk.
+* `turn-speed`: is the velocity that the player used when rotate.
 
 ## Example
 

@@ -44,9 +44,93 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "31c94c977516fbe6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Documents/AGE configuration using files.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "dd89cd1729250379",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "In room Teleportation beam.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d742a6ee603564be",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Documents/AEJ FAQ.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d1c441683c340666",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "How to update to a new version.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "84e4af651a29211b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Update from 0.3 to 0.4.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7d37dec7f9ff07b9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Visual configuration manual.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7e10fd55f1e358b0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Documents/Controller configuration.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -75,7 +159,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "fix",
+                "query": "install",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -100,7 +184,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -120,7 +205,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Documents/Documentation.md",
+                "file": "Update from 0.3 to 0.4.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -137,7 +222,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Documents/Documentation.md",
+                "file": "Update from 0.3 to 0.4.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -160,7 +245,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Documents/Documentation.md"
+                "file": "Update from 0.3 to 0.4.md"
               }
             }
           }
@@ -180,43 +265,43 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "templater-obsidian:Templater": false,
-      "digitalgarden:Digital Garden Publication Center": false,
       "webpage-html-export:Export Vault to HTML": false
     }
   },
-  "active": "7ffd618354311a46",
+  "active": "84e4af651a29211b",
   "lastOpenFiles": [
+    "How to update to a new version.md",
+    "Documents/AEJ FAQ.md",
+    "In room Teleportation beam.md",
+    "Documents/AGE configuration using files.md",
+    "Documents/Documentation.md",
+    "Update from 0.3 to 0.4.md",
+    "Visual configuration manual.md",
+    "Documents/Controller configuration.md",
+    "Visual configuration.md",
+    "Teleportation.md",
+    "Documents/Update from 0.2 to 0.3.md",
+    "Documents/Update from 0.1 to 0.2.md",
+    "Documents/Workshop.png",
+    "Documents/CDL the Cabinet Description Language.md",
+    "Age of Joy.md",
+    "semantic version system.md",
+    "Index.md",
+    "Documents/YAML.md",
+    "Documents/Unity.md",
+    "templater/Pack.md",
+    "packs/Taito classics Vol 1.md",
+    "Documents/Short guide to make cabinets.md",
+    "Documents/pacman screen.png",
+    "Documents/How to get and deploy cabinets assets.md",
+    "Documents/Generic gamepad controller mapping.png",
+    "Documents/Gamepad controller controls.md",
     "AGE database/1942.md",
     "AGE database/alpine.md",
     "AGE database/arkanoid.md",
-    "AGE database/baddudes.md",
-    "AGE database/batman.md",
-    "AGE database/bublbobl.md",
-    "AGE database/cclimber.md",
-    "AGE database/centiped.md",
-    "AGE database/cninja.md",
-    "AGE database/commando.md",
-    "AGE database/defender.md",
-    "AGE database/digdug.md",
-    "AGE database/dkong.md",
-    "AGE database/dkong3.md",
-    "AGE database/dkongjr.md",
-    "AGE database/dlair.md",
-    "AGE database/drmario.md",
-    "AGE database/elevator.md",
-    "AGE database/excitebk.md",
-    "AGE database/ffight.md",
-    "AGE database/fixitfelix.md",
-    "AGE database/frogger.md",
-    "AGE database/gaiden.md",
-    "AGE database/galaga.md",
-    "AGE database/galaxian.md",
-    "AGE database/ghouls.md",
     "LoadScreen 0.3.0.png",
-    "Documents/Generic gamepad controller mapping.png",
     "Documents/Quest controller mapping.png",
     "Documents/Controllers jerarquia.png",
-    "Documents/pacman screen.png",
     "Documents/pacman screen.png.crdownload",
     "Documents/1942 screen.png",
     "Documents/1942 screen.png.crdownload",
@@ -226,7 +311,6 @@
     "Documents/LvOUTD.png.crdownload",
     "Documents/Sidequest create archive.png",
     "Sidequest create archive.png.crdownload",
-    "Documents/sidequest screen file list.png",
     "sidequest screen file list.png.crdownload",
     "mlFKjC.png.crdownload",
     "KkmrTe.png.crdownload",

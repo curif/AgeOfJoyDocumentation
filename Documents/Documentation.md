@@ -5,6 +5,8 @@
 [[AEJ FAQ]]
 [[How to get and deploy cabinets assets]]
 [[Quest Controllers]]
+[[How to update to a new version]]
+
 
 ## Advanced 
 
