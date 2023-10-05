@@ -4,7 +4,11 @@ This document explains how to map your controller to any retro game, but it's no
 
 > [!note] this document apply to AGE of Joy version >= 0.4
 
-## Mapping
+## Visual configuration
+
+You can use the [[Visual configuration]] if you don't want to setup the controllers behavior by modifying files.
+
+## About Mapping
 
 >  Refers to the action to map the [[MAME]] emulated  [[Controllers]] to the real ones.
 
@@ -31,7 +35,7 @@ When a game starts:
 
 1. AGE analyze in the  [[CDL the Cabinet Description Language]] to see if there is a section that describe the mapping, if not, it fallback to the User Cabinet Configuration.
 2. AGE uses the user cabinet configuration yaml if the file exists, if not, it uses the Global Configuration.
-3. Again, if the file exists, AGE will uses the global configuration.
+3. Again, if the file doesn't exists, AGE will uses the global configuration.
 4. If all others are missing AGE will use the default configuration.
 
 ### Merge
@@ -45,9 +49,9 @@ For example, suppose the user maps the `B` button in the user configuration, but
 The controller configuration YAML files are in the path: `/sdcard/Android/data/com.curif.AgeOfJoy/configuration/controllers`.
 
 - Global configuration file: `global.yaml`
-- User cabinet configuration file: combines the cabinet name with the `.yaml` extension, example: `galaga.zip.yaml`, complete path: `/sdcard/Android/data/com.curif.AgeOfJoy/configuration/controllers/galaga.zip.yaml`
+- User cabinet configuration file: combines the cabinet name with the `.yaml` extension, example: `galaga.yaml`, complete path: `/sdcard/Android/data/com.curif.AgeOfJoy/configuration/controllers/galaga.yaml`
 
-if you want to change the controller behavior for all the games, then create a `global.yaml`. And if you want to change something specific for a game, the create a configuration for the cabinet, like `galaga.zip.yaml`. Both will be merged, and then merged with the default.
+if you want to change the controller behavior for all the games, then create a `global.yaml`. And if you want to change something specific for a game, then create a configuration for the cabinet, like `galaga.yaml`. Both will be merged, and then merged with the default.
 
 # Controller description YAML
 
@@ -59,20 +63,24 @@ Also read [[Gamepad controller controls]] for control codes starting with `gamep
 ```yaml
 maps:
 - libretro-id: JOYPAD_B
+  port: 0
   maps-to:
   - control: quest-b
   - control: gamepad-b
   - control: quest-right-trigger
 - libretro-id: JOYPAD_X
+  port: 0
   maps-to:
   - control: gamepad-x
   - control: quest-x
 - libretro-id: JOYPAD_START
+  port: 0
   maps-to:
   - control: gamepad-start
   - control: quest-start
 - libretro-id: JOYPAD_RIGHT
   behavior: axis
+  port: 0
   maps-to:
   - control: quest-left-thumbstick
   - control: gamepad-left-thumbstick
@@ -81,6 +89,7 @@ maps:
 This yaml file shows how to create a map list that maps the libretro (MAME) controls to the real ones.
 - `maps`: is the map list
 	- `libretro-id`: refers to the MAME control to be mapped, read the list in [[MAME controller standard table]].
+	- `port`: MAME support many ports. A port represent a virtual connection to a controller device. Ports starts in 0, and some games uses the 0 and the 1 at same time for control of a single character (like Robotron). Zero is the default and the key can be omitted.
 	- `behavior`: is the way that the control works. Only two are available: `button` and `axis`. You can omit the key when is a button. 
 	- `maps-to`: is the list of real controllers and controls (buttons for example) to check when MAME wants to know if the control is pressed.
 		- `control`: is the real control to check, explained below. Can be more than one, AGE will check all of them.
@@ -111,7 +120,7 @@ maps:
   - control: quest-x
 ```
 
-`galaga.zip.yaml`:
+`galaga.yaml`:
 
 ```yaml
 maps:
@@ -142,7 +151,7 @@ As you can see `JOYPAD_B` is replaced and `JOYPAD_X` is added. The final one wil
 
 ### Paths
 
-As you can see, the mapping works with known controllers and its parts registered in AGE's internal tables. There is a big probability that your controller works out of the box, or may be you need to touch a configuration file to add controls because your controller is not fully compatible. But are some situations where unknown incompatible controllers aren't registered in the internal tables, for them the `path` key exists.
+The mapping works with known controllers and its parts registered in AGE's internal tables. There is a big probability that your controller works out of the box, or may be you need to touch a configuration file to add controls because your controller is not fully compatible. But are some situations where unknown incompatible controllers aren't registered in the internal tables, for them the `path` key exists.
 
 In [[Unity]] controllers and controls are reached using a path. A path looks like: `<XRController>{LeftHand}/primaryButton`. AGE internal processing uses the Unity paths to know if the control is active. Users could register a path too if they need it.
 
@@ -172,3 +181,9 @@ Most controllers should work out of the box because AGE have an internal mapping
 
 Remember that the default controller configuration will be merged with your configuration.
 
+## Using ChatGPT
+
+[[Creating maps for controllers using LLMs like ChatGPT]]
+
+
+#v0_4 

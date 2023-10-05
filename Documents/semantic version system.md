@@ -1,4 +1,3 @@
-Explaining semantic versioning in simpler terms.
 
 Imagine you have a software program, like a mobile app or a computer program. Developers often make changes to the software to improve it or fix issues. Semantic versioning is a way for developers to tell users and other developers what kind of changes they have made and how these changes might affect the software.
 

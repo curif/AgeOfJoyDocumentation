@@ -86,7 +86,7 @@ If your game is running without any noticeable issue, then you can deploy the ne
 
 - Rename the file in your PC from `test.zip` to a file name that represents the game in the cabinet, in our example should be `galaxian.zip` 
 - Copy the file to the `/sdcard/Android/data/com.curif.AgeOfJoy/cabinets` folder.
-- Start AGE of Joy again, the program will find the new cabinet and move it to the cabinets database (the `/sdcard/Android/data/com.curif.AgeOfJoy/cabinetsdb` folder). Don't touch that folder is for internal uses only. The game will delete the original zip file from `/sdcard/Android/data/com.curif.AgeOfJoy/cabinets`
+- Start AGE of Joy again, the program will find the new cabinet and move it to the [[Cabinets database storage]]. The game will delete the original zip file from `/sdcard/Android/data/com.curif.AgeOfJoy/cabinets`
 - After register the new cabinet, it will be deployed in an empty slot inside a Room in the game, replacing an "out of order" cabinet.
 
 Enjoy your new cabinet!

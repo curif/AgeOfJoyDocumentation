@@ -332,6 +332,77 @@ controllers:
 
 You need to read the [[Controller configuration]] manual to fully understand how to map controllers and how the mapping merges with the rest of the configuration.
 
+## Light guns cabinet configuration
+
+![[Light guns#Light guns]]
+
+#### Minimal configuration to activate:
+
+```yaml
+light-gun:
+  active: true
+```
+
+- `light-gun`: light gun configuration section
+	- `active`: to activate the light gun. (`true`/`false`). Defaults to `false`.
+	- `model`: a `.glb` file with a model that represents the light gun. [[Age of Joy]] will change the right controller model by the model after load it. Remember: the load file operation is CPU intensive (even in async mode), you should use low poly models with little or not texture in order to not freeze the game for a long period of time. The model file must to be present in the [[Cabinet Asset]].
+		- The model metrics is in meters, [[Age of Joy]] makes none adjustment to the size or rotation. But if it is inverted you can use the `invert-pointer` property.
+		- If you download a model from internet, don't forget to give the credit to the author. You can write a file with the license in the [[Cabinet Asset]].
+	- `gun`: about the gun representation in VR
+		- `invert-pointer`: some meshes are inverted (they shoot to the opposite part of the gun)
+		- `adjust-sight`: allows you to adjust the point where the "bullet" will hit the screen in relation to the light gun. This property allows cabinets developers to adjust the sight point in the screen to the gun model. Start testing with a little value like 2 or 3.
+			- `horizontal`: measured in cms (centimeters), moves the gun up or down (without noticeable real movement of the gun) to adjust the shoot. Can be negative to move the sight down.
+			- `vertical`: same as horizontal. A negative value moves to sight to the left.
+	- `debug`:
+		- `active`: to activate a mark where the gun hit the screen. Activate only when you are working in the cabinet development.
+	- `crt`: to adapt the light gun behavior's to the CRT measurement. Don't touch it, is loaded by default, unless the CRT changes.
+		- `mesh-factor-scale-x`: Screen mesh scale factor to adjust in width. 0.01 by default
+		- `mesh-factor-scale-y`: idem previous. 0.01 by default
+		- `border-size-x`: CRT border size left to exclude.  1.5 by default
+		- `border-size-y`: idem previous. 1.0 by default
+		- `invertx`: Invert to negative/positive the x point where the gun shoot the screen, true by default.
+		- `inverty`: idem previous. true by default.
+#### Example:
+
+```yaml
+light-gun:
+  active: true
+  gun:
+    invert-pointer: true
+    adjust-sight:
+      horizontal: 0
+      vertical: 2
+  debug:
+    active: true
+```
+
+Light guns controllers are configurable using the [[Controller configuration]]. Read the [[Default controllers configuration mapping]] too, focus on LIGHTGUN_* entries in the table.
+
+## AGE Basic
+
+You can run [[Documents/AGEBasic]] programs designed for a specific cabinet. AGE has the ability to execute programs in response to predefined events, like when a user inserts a coin for the first time.
+
+AGEBasic programs must be included in the [[Cabinet Asset]].
+
+```yaml
+agebasic:
+  active: true
+  debug: true
+  after-insert-coin: insertcoin.bas
+  after-leave: leave.bas
+  after-load: onload.bas
+```
+
+- `agebasic`: description subdocument
+	- `active`: program execution is avoided when isn't active.
+	- `debug`: to create a debug file for each program.
+	- `after-load`: file name of the program to execute when the cabinet is fully loaded in the 
+	- `after-insert-coin`: file name of the program to execute when the player insert a coin for first time to start a game.
+	- `after-leave`: program to execute when the player leaves the game.
+
+Read this document to fully understand how AGEBasic programs works in the cabinet's environment: [[AGEBasic in cabinets]].
+
+
 ## References
 
 [^1]: only for information, don't affect the game.

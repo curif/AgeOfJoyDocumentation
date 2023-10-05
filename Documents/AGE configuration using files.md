@@ -1,3 +1,5 @@
+# AGE configuration using files
+
 To change a configuration file you will need to know the [[YAML]] language that is widely used by the game. Like in CDL, there are some rules to follow.
 
 If you already know YAML or CDL you can jump the next section:
@@ -27,7 +29,7 @@ Values can be anything:
 * a *document* (a group of key/values) 
 * a *list of values* (each element of a list starts with a `-`)
 
-A detailed tutorial: [YAML Tutorial: Everything You Need to Get Started in Minutes](https://www.cloudbees.com/blog/yaml-tutorial-everything-you-need-get-started).
+A `yaml` detailed tutorial: [YAML Tutorial: Everything You Need to Get Started in Minutes](https://www.cloudbees.com/blog/yaml-tutorial-everything-you-need-get-started)
 
 # Configuration files
 
@@ -44,6 +46,7 @@ You can have two o more types of files in the `configuration` folder:
 - Room configuration: named `<room name>.yaml`. Example: `room001.yaml` or `roomintro.yaml`. Each room in the game has its own code, you can find the code in the control box installed in each room; just add the `.yaml` extension to the name.
 
 ### Room configuration files
+
 At start, only the `configuration.yaml` file exists, it is global and all the rooms respond to the configuration of that file. But, if you create a room configuration file, then the room will respond to the configuration of that file. _You don't need to repeat all the `keys` in all files, just change what you need_ in the room configuration file. For example, you can disable NPCs in the global configuration, but enable them in the `room004.yaml`. What you write in a room file affects only to that room and only the parameters that you write there, the others parameters responds to the global configuration file.
 
 Both type of files share the same yaml structure.
@@ -64,6 +67,9 @@ locomotion:
   teleport-enabled: true
   speed: 2
   turn-speed: 80
+player:
+  height: 1.6
+  scale: 0.9
 ```
 
 ## `npc`
@@ -85,11 +91,51 @@ It's the background sound when you play a game. The keys and values are the same
 
 Refers to the player's movement in the virtual space (walk, rotate, etc.)
 
-* `teleport-enabled`: `true` or `false`. Activate/deactivate the [[In room Teleportation beam]] 
+* `teleport-enabled`: `true` or `false`. Activate/deactivate the [[In Room Teleportation]] 
 * `speed`: is the translation velocity. The velocity used to walk.
 * `turn-speed`: is the velocity that the player used when rotate.
 
-## Example
+## Player
+
+To configure some aspects about the player:
+
+- `height`: a decimal point number that represents the player's eye sight height. Values can vary from 1.35 to 1.85 max. 1.6 is an average height. The default (zero) is your real height.
+- `scale`: change the scale of the game, to pretend to be a child for example. The default is 0.9 (adult).
+
+#### Heights
+
+Use `Calculated` (`height` zero) to use your real height in the game. 
+The values are not exact but indicative.
+
+| Option            | Height (aprox)    |
+|----------------------|-----------|
+| Pac-man (short)      | 1.35m     |
+| Sonic                | 1.4m      |
+| Pikachu              | 1.45m     |
+| Mario                | 1.5m      |
+| Luigi                | 1.55m     |
+| Final Fantasy (avg)  | 1.6m      |
+| Megaman              | 1.65m     |
+| Street Fighter       | 1.7m      |
+| Donkey Kong          | 1.75m     |
+| Mega Boss            | 1.8m      |
+| NBA Jam (tall)       | 1.85m     |
+
+#### Scales
+
+You can change the `scale` if you want to live the experience as a kid for example.
+`Scale` can vary from `0.6` to `1`. `0.9` is the default.
+
+> [!note] Combinations between `scale` and `height` can produce strange behavior.
+
+#### Example
+
+```yaml
+player:
+  height: 1.6
+  scale: 0.9
+```
+## Merging Example
 
 In this example, you disabled all NPCs except those in room001.
 
@@ -104,6 +150,7 @@ audio:
   in-game-background:
     volume-percent: 20
     muted: false
+
 ```
 `room001.yaml`
 ```yaml

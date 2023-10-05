@@ -3,3 +3,5 @@ Most gamepads exposes the same control configuration when are connected to a dev
 ![[Generic gamepad controller mapping.png]]
 
 Refer to [[Default controllers configuration mapping]] to understand how AGE maps a gamepad.
+
+#v0_4 

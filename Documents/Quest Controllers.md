@@ -3,7 +3,7 @@
 The *AGE of Joy* behavior differs where you are in emulation mode or in simulation mode.
 
 * **Simulation mode**: you can walk and move inside the simulation using the primary joystick to advance and lateral movements and the secondary joystick for rotation.
-* **Emulation mode**: when you insert a coin and the game [[ROM]] is present you can play the game; you can no longer walk or rotate because you are using the Quest Controls to play.
+* **Emulation/Game mode**: when you insert a coin and the game [[ROM]] is present you can play the game; you can no longer walk or rotate because you are using the Quest Controls to play.
 
 To exit the Emulation Mode, grip the left control and wait some seconds, AGE of Joy returns the control movement to you, and the emulation ends.
 
@@ -21,3 +21,8 @@ The game perform its initialization process when the emulation starts, this is a
 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/MYOKp9lI_7o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Advanced
+
+[[Controller configuration]]
+[[Visual configuration manual#Setup Controllers]]

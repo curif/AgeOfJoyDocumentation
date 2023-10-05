@@ -1,4 +1,4 @@
-![[LoadScreen 0.3.0.png]]
+![[LoadScreen.png]]
 
 # AGE of Joy
 
@@ -6,15 +6,18 @@ If you don't know what AGE of Joy is please follow [this link](https://curifab.i
 
 ## Documentation
 
-AGE of Joy require some work to start. I suggest to read the [[Documentation]]. 
+AGE of Joy require some work to start. I suggest to read the [[AGE FAQ]] and the [[Documentation]]. 
 
 ## Cabinets
 
 ### Packs
 
-A cabinet pack is a group of cabinets packed for distribution. You can read in [[How to get and deploy cabinets assets]] about the installation in your Quest. You can also [[Short guide to make cabinets]]  if you can't find what you need.
+A cabinet pack is a group of cabinets packed for distribution. You can read in [[How to get and deploy cabinets assets]] about the installation in your Quest. You can also read the [[Short guide to make cabinets]]  if you can't find what you need.
 
-> [!note] there are a lot of cabinets made by the community not listed here. Join to the [Discord](https://discord.gg/b83ykCM9Xp) server to get them. You will need to dig in messages groups to catch new cabinets.
+> [!note] There are many cabinets created by the community that are not mentioned or listed here. To access them, you can join the [Discord](https://discord.gg/b83ykCM9Xp)  server. However, it's important to note that discovering these additional cabinets may require some effort on your part. You will need to search through message groups to find the latest and newly shared cabinets.
+
+In July 2023, the [[Discord server]] community achieved a remarkable milestone of surpassing *300* cabinets, and the count is still growing!
+![[Pasted image 20230728173712.png]]
 
 ```dataview 
 table without id file.link as Name, author as Author, "" + games as Games, link as Link
@@ -30,7 +33,8 @@ from "packs"
 
 ## About [[ROM]]s
 
-> [!warning]  👮🏼‍♂️ ROMs are copyrighted material, check it on the internet. It's not allowed to distribute any illegal material in any way, and please, don’t ask where to find roms or anything related.
+> [!warning]  👮🏼‍♂️ ROMs are digital copies of copyrighted material, such as games, and are protected by intellectual property laws. It is important to be aware of this and respect the legal rights of copyright holders. Distributing ROMs or engaging in any form of illegal sharing of copyrighted material is strictly prohibited.
+I would advise you not to inquire about or seek guidance on where to find ROMs or engage in any activities that infringe upon copyright laws. It is always best to obtain games and other copyrighted content through legal means, such as purchasing them from authorized sources.
 
 If you have a question about a [[ROM]] or a problem with a rom please post a question in [Discord](https://discord.gg/b83ykCM9Xp)
 

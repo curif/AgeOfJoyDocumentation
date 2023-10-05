@@ -1,6 +1,6 @@
 Please read this document only if you have a previous version installed and you want to install a new one.
 
-[[Age of Joy]] follows a strict [[semantic version system]]
+[[Age of Joy]] follows a [[semantic version system]]
 
 ## Instructions
 

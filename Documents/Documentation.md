@@ -1,11 +1,12 @@
 ## Documentation
 
-## Beginers
+## Beginners
 
-[[AEJ FAQ]]
+[[AGE FAQ]]
 [[How to get and deploy cabinets assets]]
 [[Quest Controllers]]
 [[How to update to a new version]]
+[[Visual configuration]]
 
 
 ## Advanced 
@@ -18,6 +19,8 @@ Cabinets are an essential part of the experience, you should search for them and
 
 [[Short guide to make cabinets]]
 [[CDL the Cabinet Description Language]]
+[[AGEBasic programing]]
+
 
 ### About how to configure  AGE of Joy
 

@@ -5,23 +5,27 @@ AGE of Joy (`AGE` in short) is an experience/game/simulation. This experience is
 ## Ok, I want to download it.
 Go [here](https://curifab.itch.io/age-of-joy).
 ## Can I play it on a PC?
-No, only plays in Meta Quest 2 (at the moment when this document was written).
+As of the time this document was written, the game can only be played on Meta Quest 2 and is not compatible with PCs.
 ## How much it cost?
-You can make a donation to the developer, but it is not strictly necessary. Download and enjoy it.
+The game is available for download and enjoyment without any strict cost requirements. While you have the option to make a donation to support the developer, it is not mandatory. Feel free to download the game and experience it at no financial obligation.
 ## How to install AGE? 
-* Download from this [itchio page](https://curifab.itch.io/age-of-joy) (you can download release candidates from GitHub too, but they are not stable).
+* Download from this [itchio page](https://curifab.itch.io/age-of-joy) (you can download release candidates from GitHub too, but they are less stable).
 * Backup the previous version (from the Quest to your PC) if you already install it.
 * Install the game using [Sidequest](https://sidequestvr.com/) (follow [[Sidequest]] instructions to install it): [Instructions](https://learn.adafruit.com/sideloading-on-oculus-quest/install-and-use-sidequest)
 Note that you need to enable the developer mode to sideload programs. It's the way that developers run applications: [Enable developer mode](https://learn.adafruit.com/sideloading-on-oculus-quest/enable-developer-mode)
+**Important**: If you are upgrading to a new version please read this document: [[How to update to a new version]].
 ## I install it but I only see black ugly cabinets! what is wrong?
-Nothing, that's how AGE should look when you install it. It is necessary to upload cabinets to deploy in the rooms. And you also need ROMs if you want to play.
+It is completely normal to see black cabinets when you first install AGE. This is the expected appearance as the initial installation does not include any cabinets. To populate the rooms with cabinets, you will need to upload cabinet files. Additionally, if you want to play games, you will also need to obtain ROMs for the specific games you wish to play.
 ## I have problems when play, what can I do?
-AGE is in active development and has not been fully achieved. Errors and problems will surely arise.
-Read the documentation first, and ask in Discord later if you can't resolve your issues. 
+Please keep in mind that AGE is still in active development and may encounter errors or issues. If you experience any problems while playing, it is recommended to read the documentation first. The documentation provides valuable information and troubleshooting tips that might help resolve the issue.
+
+If you are unable to find a solution in the documentation, it is advisable to seek further assistance in the [[Discord server]] community. The Discord community is a helpful resource where you can ask questions and receive support from other AGE users and developers.
+
+By referring to the documentation and seeking assistance in the Discord community, you increase your chances of resolving any gameplay-related issues you may encounter.
 ## Can I configure the game, like to quit the NPCs or the sound?
-Yes you can do it by changing the game configuration files, read how to do it here: [[AGE configuration using files]]
+Yes you can do it by changing the game configuration files, read how to do it here: [[AGE configuration using files]] 
 ## Can I configure the game being in the game? I don't like to change files.
-At the moment it is the only way. In the future there will be configuration screens in the game.
+Yes, with the [[Visual configuration]] if you are in the `0.4` version
 
 
 # ROMS
@@ -47,7 +51,7 @@ Not all ROMs are available to play, inconsistencies, bugs and incompatibilities 
 Yes, you need it, as in the old days, each cabinet had mainly one set. Read the cabinet section in this document. 
 ## MD5 checksum
 ### What is a md5 checksum/token?
-The md5 is a token that is useful to validate if your [[ROM]] is the correct. An md5 looks like `56a6c44c2d6678bdc085b8780bc51819`
+The [[md5 checksum]] is a token that is useful to validate if your [[ROM]] is the correct. An md5 looks like `56a6c44c2d6678bdc085b8780bc51819`
 ### How can I check if my [[ROM]] is the correct using an MD5?
 First you need the md5 of the tested rom, you can get it in the `description.yaml` file inside the cabinet file. Or you can get it by looking the page of each game in this site. Then compare it with the md5 of your own ROM, you can get your md5 here: [MD5 Hash Calculator](https://curif.github.io/AgeOfJoy-ROMCRC/index.html). Compare both md5, if they are exactly the same then you have the correct ROM.
 ## Where to upload the ROM?
@@ -74,16 +78,16 @@ Yes, you need to configure the Quest Accessibility Options. By doing so, you wil
 
 # Cabinets
 ## What is a cabinet?
-Old games comes in its own cabinets. So to play a game you need to download a cabinet and upload it to your Quest.
+Old games comes in its own [[Cabinets]]. So to play a game you need to download a cabinet and upload it to your Quest.
 ## Where can I download cabinets?
 You need to "hunt" them on internet. The best place to start is this site.
 There a lot of cabinets made by the community, get those in [Discord](https://discord.gg/b83ykCM9Xp)
-## how to instal cabinets in AGE?
+## how to install cabinets in AGE?
 Read  [[How to get and deploy cabinets assets]]
-## I have a cabinet file, how to upload it?
+## I have a cabinet asset, how to upload it?
 Copy the zip file to `/sdcard/Android/data/com.curif.AgeOfJoy/cabinets`
 ## So I have to decompress the zip file, right?
-NO, just copy the zip file to the folder.
+**NO**, just copy the zip file to the folder.
 ## I can't find the folder!
 You must run AGE at least once to create the folders
 ## I'm confused, the cabinet file and the [[ROM]] file have the same name...
@@ -106,15 +110,17 @@ The place where you can see the cabinets are called "rooms".
 ## What is the workshop?
 A special room. If you are a cabinet artist or developer is the place where you test the cabinets.
 ## Can I configure the rooms?
-Yes, you can change a little the room, read the configuration documentation: [[AGE configuration using files]]. More configurations to come with new versions in the future.
+Yes, you can change a little the room, read the configuration documentation: [[AGE configuration using files]] and [[Visual configuration]]. More configurations to come with new versions in the future.
 ## How I move from a room to another?
 Just walk to the black door and wait for the next room to deploy.
+You can teleport to a room with the [[Teleportation]] functionality.
 ## You can make that all the rooms are available at the same time? it is weird to wait.
 Quest can't process all the rooms with all cabinets and introduction videos at the same time, so it's a way to have a big arcade gallery without problems.
 ## I can't enter a room!
 Usually AGE comes with doors to rooms that would exist in future versions. You can't enter there because the room don't exists yet.
 ## I have to walk a lot to reach a game, can I just jump to it?
-No, you can do it, you need to walk as you do in old times. Other options will appear in the future
+Yes, using the [[In Room Teleportation]].
+
 
 
 
