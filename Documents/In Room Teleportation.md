@@ -1,3 +1,5 @@
+# In Room Teleportation
+
 In order to move to a particular location within the virtual environment, the user has the ability to teleport. To initiate the teleportation process, the user needs to press the right-grip control in the Quest controller and direct a beam towards an area in the virtual environment that is capable of receiving teleportation. 
 
 By pressing the `right-grip` control the user triggers the teleportation action. They then use the beam, to select the desired teleportation destination, holding and leaving the `right-joystick up`  the user triggers the teleportation action. The areas in the virtual environment that are suitable for teleportation are marked as teleport-capable areas. The beam change colors when hit a teleportation area.

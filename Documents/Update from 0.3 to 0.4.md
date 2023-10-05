@@ -23,7 +23,7 @@ The [[Discord server]] community exceeded 300 cabinets!
 * New [[Visual configuration]]:
 	* Follow the [[Visual configuration manual]] to fully understand how it works.
 	* Additionally, the configuration settings that were previously available in the [[AGE configuration using files]]  can now also be accessed and modified through the new Visual configuration too.
-* [[AGEBasic]] to control in-game behavior using the BASIC programming language.
+* [[AGEBasic]] to control in-game behavior using the BASIC programming language. You can write your own programs to change the game as you wish. There are examples about how to mix cabinets for example.
 * External controls: The game now supports gamepad and compatible controls. You can connect and use a gamepad, as well as other compatible control devices like Bluetooth controllers. USB controllers have not undergone testing yet; however, they are expected to be compatible and function properly.
 * Controller configuration: There are two ways to configure controls. The first method is via CDL ([[CDL the Cabinet Description Language]]), which is a language used by the cabinet modeler to set up controls. The second method is using the Visual Configuration, which provides a more user-friendly interface for configuring controls.
 * Rooms: Rooms now have some new features. 
@@ -36,14 +36,17 @@ The [[Discord server]] community exceeded 300 cabinets!
 	* On the floor in front of each cabinet, there is a sticker that displays the cabinet's number. This sticker serves as a visual identifier for the cabinet, making it easier to locate and replace the cabinet with another game. The number on the sticker helps users accurately identify and keep track of each cabinet, facilitating the process of cabinet replacement.
 	* There are functions in [[AGEBasic]] to control a cabinet.
 	* New [[Configuration control cabinet]], you can find one on each room.
+* Player (you):
+	* Your height could be configured using visual/file configuration. Useful to play seated too.
+	* Your can change your age (to feel the experience as a kid for example)
+	* Walk velocity and rotation configuration.
 * In room teleportation: the user now can jump to specific places (like a door o to the front of a cabinet) to avoid sickness motion effect, read more in [[In Room Teleportation]].
-* When a coin is inserted into a cabinet, the visual representation of the hands in the virtual environment changes to that of a controller. This alteration serves as a visual indicator to signify that the user has entered game mode.
-* Light guns: Light guns let you play games where you point and shoot at the screen. Eg: duck hunt
+* When a coin is inserted into a cabinet, the visual representation of the hands in the virtual environment changes to that of a controller. This alteration serves as a visual indicator to signify that the user has entered game mode. Some cabinets might change that visual representation, e.g. for a weapon in light guns games.
+* Light guns: Light guns let you play games where you point and shoot at the screen. E.g.: duck hunt
 * New Movie Pictures from the 90s.
 * New real Pictures added.
 * New textured hands.
-* Height player configuration
-
+* Extensive documentation: [[Index]]
 
 ## Tech stuff
 
